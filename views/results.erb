@@ -10,7 +10,7 @@
 
 <body>
 
-	<header> Your search results are here:</header>
+	<header> <%=@question.question%></header>
 	<div class="container">
 		<div> <%@search_results.each do |movie|%>
 				<img class="movies" src="<%=movie.poster%>">
