@@ -12,10 +12,19 @@
 
 	<header> <%=@question.question%></header>
 	<div class="container">
-		<div> <%@search_results.each do |movie|%>
+
+	  <form action = "/check_answer" method = "POST">
+
+				<%@search_results.each do |movie|%>
+				<div class="options">
 				<img class="movies" src="<%=movie.poster%>">
+				<button type="submit" name="movie" value="movie.year">Select</button>
+				</div>
 			 <%end%>
-		</div>
+		
+
+	  </form>
+
     </div>
 
 

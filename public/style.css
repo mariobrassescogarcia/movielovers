@@ -59,11 +59,21 @@ button {
 	background-color: #ffe066;
 	margin: auto;
 	height: 70px;
-	width: 70px;
+	width: 150px;
 	font-family: "Helvetica Neue";
+	font-size: 20px;
 	box-shadow: 3px 3px 2px #888888;
+	margin-left: 50px;
 }
 
+
+.options{
+	float: left;
+	height: 600px;
+	width: 250px;
+	padding: 20px;
+	margin: 10px;
+}
 
 
 
@@ -74,6 +84,6 @@ button {
 	padding: 20px;
 	margin: 10px;
 	background-color: white;
-	box-shadow: 3px 3px 2px #888888;
+	box-shadow: 5px 5px 2px #888888;
 }
 
