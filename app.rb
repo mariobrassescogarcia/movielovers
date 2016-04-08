@@ -29,14 +29,22 @@ end
 
  post "/check_answer" do
 
-	@answer = params[:movieyear]
-	binding.pry 	
+	@answer = params[:movieyear].to_i
 		 if @answer == checker.right_answer.right_answer
 	 		redirect "/ok"
-			erb(:ok)
 		else
+			binding.pry
 			redirect "/nook"
-
-			erb(:nook)
 		end
+end
+
+
+
+
+get "/ok" do 
+	erb(:ok)	
+end
+
+get "/nook" do 
+	erb(:nook)	
 end
