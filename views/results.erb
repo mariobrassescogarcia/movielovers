@@ -18,7 +18,7 @@
 				<%@search_results.each do |movie|%>
 				<div class="options">
 				<img class="movies" src="<%=movie.poster%>">
-				<button type="submit" name="movie" value="movie.year">Select</button>
+				<button type="submit" name="movieyear" value="<%=movie.year%>">Select</button>
 				</div>
 			 <%end%>
 		

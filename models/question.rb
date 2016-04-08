@@ -13,7 +13,9 @@ class Question
 	end
 
 	def right_answer 
-		@movielist.select { |movie| movie.year == @year_asked}
+		@correct_film = @movielist.find { |movie| movie.year == @year_asked}
+		@correct_year = @correct_film.year
+		@correct_year
 	end
 
 end
