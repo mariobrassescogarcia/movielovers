@@ -12,27 +12,11 @@ end
 
 
 
-post "/searching" do
-
-	params.inspect
+get "/results" do
 	@search_terms = params[:wordsearch]
 	@new_search = Imdb::Search.new(@search_terms)
-	@search_results = @new_search.movies
-	binding.pry
-		if @search_results.length > 9
-			@first_nine_results = @search_results.each_with_index {|movie, index|
-				while index <= 9
-					return movie
-				end
-			}
-
-		end
-
-	redirect "/results"
-end
-
-
-get "/results" do
+	@search_results = @new_search.movies[0..8]
+	@search_results = @search_results.delete_if {|movie| movie.poster == nil}
+	# binding.pry
 	erb(:results)
 end
-

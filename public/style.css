@@ -1,0 +1,63 @@
+body {
+	background-color: #009983;
+}
+
+
+header{
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	font-size: 75px;
+	height: 100px;
+	font-family: "Helvetica Neue";
+	color: #ffe066;
+	padding: 50px;
+	margin-bottom: 100px;
+}
+
+
+form {
+	height: 75px;
+	margin:auto;
+	width: 100%;
+	font-size: 25px;
+}
+
+
+input {
+	float: left;
+	text-align: auto;
+	margin: auto;
+	height: 70px;
+	width: 500px;
+	text-align: center;
+	font-size: 20px;
+    background-color: white;
+    font-family: "Helvetica Neue";
+	box-shadow: 3px 3px 2px #888888;
+	margin-left: 30%;
+}
+
+button {
+	float: left;
+	background-color: #ffe066;
+	margin: auto;
+	height: 70px;
+	width: 70px;
+	font-family: "Helvetica Neue";
+	box-shadow: 3px 3px 2px #888888;
+}
+
+
+
+
+.movies{
+	float: left;
+	height: 480px;
+	width: 250px;
+	padding: 20px;
+	margin: 10px;
+	background-color: white;
+	box-shadow: 3px 3px 2px #888888;
+}
+
